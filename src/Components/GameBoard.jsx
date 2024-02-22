@@ -17,9 +17,5 @@ export default function GameBoard() {
     </li>
   ));
 
-  return (
-    <>
-      <ol id="game-board">{innerGameBoard}</ol>
-    </>
-  );
+  return <ol id="game-board">{innerGameBoard}</ol>;
 }

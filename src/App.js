@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Player from "./Components/Player";
+import GameBoard from "./Components/GameBoard";
 
 function App() {
   const player1Name = "Player 1";
@@ -13,6 +14,7 @@ function App() {
         <Player playerName={player1Name} symbol={player1Symbol} />
         <Player playerName={player2Name} symbol={player2Symbol} />
       </ol>
+      <GameBoard />
     </div>
   );
 }
