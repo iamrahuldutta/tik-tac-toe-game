@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Player from "./Components/Player";
 
 function App() {
+  const player1Name = "Player 1";
+  const player1Symbol = "X";
+  const player2Name = "Player 2";
+  const player2Symbol = "O";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="game-container" className="App">
+      <ol id="players">
+        <Player playerName={player1Name} symbol={player1Symbol} />
+        <Player playerName={player2Name} symbol={player2Symbol} />
+      </ol>
     </div>
   );
 }
